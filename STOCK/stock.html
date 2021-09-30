@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stock Management System</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+
+<body>
+<div class="container">
+
+  <!--add product section-->
+  <div class="col-md-8">
+    <!--alert to tell products added-->
+    <div id="successProductAlert" class="alert alert-warning" role="alert">
+      Product added successfully!
+    </div>
+    <form>
+      <div class="form-group">
+        <h2><em>Add Stock</em></h2>
+        <label for="productCode">Select a Product Code</label>
+        <select name="products" id="productCode">
+          <option value="--select--">--Select--</option>
+          <option value="product1">PRODUCT1</option>
+          <option value="product2">PRODUCT2</option>
+          <option value="product3">PRODUCT3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="items">Items Received</label>
+        <input type="number" value="1">
+      </div>
+      <div class="form-group">
+        <label for="price">Price per item Received</label>
+        <input type="text" name="Second" id="price-per-items" placeholder>
+      </div>
+    </form>
+    <button class="addtostock btn btn-primary">Add Stock</button>
+  </div>
+</div>
+</body>
+
+</html>
